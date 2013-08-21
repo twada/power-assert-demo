@@ -62,28 +62,6 @@ module.exports = function(grunt) {
             power_coffee: {
                 options: { ui: 'bdd' },
                 src: ['<%= destDir %>/**/*.js']
-            },
-            demo0: {
-                options: { ui: 'tdd' },
-                src: ['test/demo0/*.js']
-            },
-            demo1: {
-                options: { ui: 'tdd' },
-                src: ['test/demo1/*.js']
-            },
-            demo2: {
-                options: { ui: 'tdd' },
-                src: ['test/demo2/*.js']
-            },
-            demo3: {
-                options: { ui: 'bdd' },
-                src: ['test/demo3/*.js']
-            },
-            demo4: {
-                src: ['test/demo4/*.js']
-            },
-            demo5: {
-                src: ['test/demo5/*.js']
             }
         }
     });
@@ -132,9 +110,6 @@ module.exports = function(grunt) {
     });
 
 
-    for (var i = 0; i < 10; i += 1) {
-        grunt.registerTask('demo' + i, ['mochaTest:demo' + i]);
-    }
     grunt.registerTask('tdd', ['mochaTest:tdd']);
     grunt.registerTask('bdd', ['mochaTest:bdd']);
     grunt.registerTask('power_assert', ['clean:power_assert', 'espower:power_assert', 'mochaTest:power_assert']);
