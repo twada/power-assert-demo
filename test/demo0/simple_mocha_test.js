@@ -1,17 +1,10 @@
 var assert = require('assert');
 
-describe('Array', function(){
-    beforeEach(function(){
-        this.ary = [1,2,3];
-    });
-    describe('#indexOf', function(){
-        it('should return index when the value is present', function(){
-            var zero = 0, two = 2;
-            assert(this.ary.indexOf(zero) === two);
-        });
-        it('should return -1 when the value is not present', function(){
-            var minusOne = -1, two = 2;
-            assert.ok(this.ary.indexOf(two) === minusOne, 'THIS IS AN ASSERTION MESSAGE');
-        });
+suite('Array#indexOf', function(){
+    test('値がある場合はその index を返す', function() {
+        var ary = [1,2,3],
+            zero = 0,
+            two = 2;
+        assert(ary.indexOf(zero) === two);
     });
 });

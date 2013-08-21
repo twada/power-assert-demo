@@ -36,6 +36,7 @@ module.exports = function(grunt) {
                 src: ['<%= destDir %>/**/*.js']
             },
             demo0: {
+                options: { ui: 'tdd' },
                 src: ['test/demo0/*.js']
             },
             demo1: {
