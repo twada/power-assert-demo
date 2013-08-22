@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        coffee_espower: {
+        espower_csredux: {
             power_coffee: {
                 files: [
                     {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     });
 
 
-    grunt.registerMultiTask('coffee_espower', 'instrument power assert onto the coffee.', function() {
+    grunt.registerMultiTask('espower_csredux', 'instrument power assert into the coffee.', function() {
         // Merge task-specific and/or target-specific options with these defaults.
         var _ = grunt.util._,
             options = this.options({
@@ -88,21 +88,18 @@ module.exports = function(grunt) {
             }).forEach(function(filepath) {
                 grunt.verbose.writeln('espower src: ' + f.src);
                 var absPath = fs.realpathSync(filepath),
-                    csCode = fs.readFileSync(filepath, 'utf-8');
-
-                var parseOptions = {raw: true};
-                var compileOptions = {bare: true};
-                var jsGenerateOptions = {compact: false};
-                var espowerOptions = _.merge(options, {
-                    path: absPath,
-                    source: csCode
-                });
-
+                    csCode = fs.readFileSync(filepath, 'utf-8'),
+                    parseOptions = {raw: true},
+                    compileOptions = {bare: true},
+                    jsGenerateOptions = {compact: false},
+                    espowerOptions = _.merge(options, {
+                        path: absPath,
+                        source: csCode
+                    });
                 var csAST = CoffeeScript.parse(csCode, parseOptions);
                 var jsAST = CoffeeScript.compile(csAST, compileOptions);
                 var espoweredAst = espower(jsAST, espowerOptions);
                 var jsCode = CoffeeScript.js(espoweredAst, jsGenerateOptions);
-
                 grunt.verbose.writeln('espower dest: ' + f.dest);
                 grunt.file.write(f.dest, jsCode);
             });
@@ -113,5 +110,5 @@ module.exports = function(grunt) {
     grunt.registerTask('tdd', ['mochaTest:tdd']);
     grunt.registerTask('bdd', ['mochaTest:bdd']);
     grunt.registerTask('power_assert', ['clean:power_assert', 'espower:power_assert', 'mochaTest:power_assert']);
-    grunt.registerTask('power_coffee', ['clean:power_coffee', 'coffee_espower:power_coffee', 'mochaTest:power_coffee']);
+    grunt.registerTask('power_coffee', ['clean:power_coffee', 'espower_csredux:power_coffee', 'mochaTest:power_coffee']);
 };
