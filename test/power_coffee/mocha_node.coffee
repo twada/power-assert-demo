@@ -1,6 +1,7 @@
 assert = require 'power-assert'
 
 describe 'Array#indexOf()', ->  
+
     beforeEach ->
         this.ary = [1,2,3]
 
