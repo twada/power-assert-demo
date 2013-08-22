@@ -1,7 +1,7 @@
 {
-  "name": "tng10-demo",
+  "name": "power-assert-demo",
   "private": true,
-  "description": "power-assert demo at #tng10",
+  "description": "power-assert demo",
   "version": "0.1.0",
   "keywords": [
     "test",
