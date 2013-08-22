@@ -1,8 +1,15 @@
 var expect = require('expect.js');
 
-describe('Array#indexOf', function(){
-    it('値がある場合はその index を返す', function() {
-        var ary = [1,2,3];
-        expect(ary).to.contain('hoge');
+describe('Array#indexOf()', function () {
+    beforeEach(function () {
+        this.ary = [1,2,3];
+    });
+    it('should return index when the value is present', function () {
+        var who = 'ariya', two = 2;
+        expect(this.ary.indexOf(who)).to.be(two);
+    });
+    it('more spec-ish notation', function () {
+        var who = 'ariya', two = 2;
+        expect(this.ary).to.contain(who);
     });
 });
