@@ -3,6 +3,8 @@ var espower = require('espower'),
     fs = require('fs');
 
 module.exports = function(grunt) {
+    'use strict';
+
     var pkg = grunt.file.readJSON('package.json');
 
     (function () {
@@ -47,13 +49,13 @@ module.exports = function(grunt) {
             }
         },
         mochaTest: {
-            tdd: {
+            normal_assert: {
                 options: { ui: 'tdd' },
-                src: ['test/tdd/*.js']
+                src: ['test/normal_assert/*.js']
             },
-            bdd: {
+            mocha_expect: {
                 options: { ui: 'bdd' },
-                src: ['test/bdd/*.js']
+                src: ['test/mocha_expect/*.js']
             },
             power_assert: {
                 options: { ui: 'tdd' },
@@ -107,8 +109,8 @@ module.exports = function(grunt) {
     });
 
 
-    grunt.registerTask('tdd', ['mochaTest:tdd']);
-    grunt.registerTask('bdd', ['mochaTest:bdd']);
+    grunt.registerTask('normal_assert', ['mochaTest:normal_assert']);
+    grunt.registerTask('mocha_expect', ['mochaTest:mocha_expect']);
     grunt.registerTask('power_assert', ['clean:power_assert', 'espower:power_assert', 'mochaTest:power_assert']);
     grunt.registerTask('power_coffee', ['clean:power_coffee', 'espower_csredux:power_coffee', 'mochaTest:power_coffee']);
 };
