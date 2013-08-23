@@ -6,6 +6,7 @@
   "keywords": [
     "test",
     "assert",
+    "power-assert",
     "testing"
   ],
   "author": {
@@ -14,7 +15,7 @@
     "url": "http://github.com/twada"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt power_assert"
   },
   "dependencies": {
   },
@@ -26,7 +27,6 @@
     "expect.js": "0.2.0",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-mocha-test": "~0.6.2",
     "grunt-espower": "~0.1.0"
   }
