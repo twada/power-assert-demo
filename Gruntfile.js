@@ -65,7 +65,25 @@ module.exports = function(grunt) {
                 options: { ui: 'bdd' },
                 src: ['<%= destDir %>/**/*.js']
             }
-        }
+        },
+        watch: {
+            normal_assert: {
+                files: ['test/normal_assert/*.js'],
+                tasks: ['normal_assert']
+            },
+            mocha_expect: {
+                files: ['test/mocha_expect/*.js'],
+                tasks: ['mocha_expect']
+            },
+            power_assert: {
+                files: ['test/power_assert/*.js'],
+                tasks: ['power_assert']
+            },
+            power_coffee: {
+                files: ['test/power_coffee/*.coffee'],
+                tasks: ['power_coffee']
+            },
+        },
     });
 
 
