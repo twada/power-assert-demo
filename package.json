@@ -2,7 +2,7 @@
   "name": "power-assert-demo",
   "private": true,
   "description": "power-assert demo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "test",
     "assert",
@@ -19,8 +19,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "power-assert": "~0.2.0",
-    "espower": "~0.2.0",
+    "power-assert": "~0.2.2",
+    "espower": "~0.2.1",
     "esprima": "1.0.4",
     "coffee-script-redux": "2.0.0-beta7",
     "expect.js": "0.2.0",
