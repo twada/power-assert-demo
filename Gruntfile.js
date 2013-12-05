@@ -1,5 +1,6 @@
 var espower = require('espower'),
     CoffeeScript = require('coffee-script-redux'),
+    _ = require('lodash'),
     fs = require('fs');
 
 module.exports = function(grunt) {
@@ -89,8 +90,7 @@ module.exports = function(grunt) {
 
     grunt.registerMultiTask('espower_csredux', 'instrument power assert into the coffee.', function() {
         // Merge task-specific and/or target-specific options with these defaults.
-        var _ = grunt.util._,
-            options = this.options({
+        var options = this.options({
                 destructive: false,
                 powerAssertVariableName: 'assert'
             });
