@@ -50,6 +50,13 @@ module.exports = function(grunt) {
             }
         },
         mochaTest: {
+            espower_loader: {
+                options: {
+                    ui: 'tdd',
+                    require: './enable-power-assert'
+                },
+                src: ['test/power_assert/*.js']
+            },
             normal_assert: {
                 options: { ui: 'tdd' },
                 src: ['test/normal_assert/*.js']
@@ -126,6 +133,8 @@ module.exports = function(grunt) {
         });
     });
 
+
+    grunt.registerTask('espower_loader', ['mochaTest:espower_loader']);
 
     grunt.registerTask('normal_assert', ['mochaTest:normal_assert']);
     grunt.registerTask('mocha_expect', ['mochaTest:mocha_expect']);
