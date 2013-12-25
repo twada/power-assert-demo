@@ -15,7 +15,7 @@ HOW TO USE
 4. `grunt normal_assert` then see normal output of assert module.
 5. `grunt power_assert` then see the [power-assert](http://github.com/twada/power-assert) output.
 6. `grunt power_coffee` and now power-assert runs with [CoffeeScriptRedux](https://github.com/michaelficarra/CoffeeScriptRedux)!
-5. `grunt espower_loader` then see the [espower-loader](http://github.com/twada/espower-loader) magic.
+7. `grunt espower_loader` then see the [espower-loader](http://github.com/twada/espower-loader) magic.
 
 
 AUTHOR
