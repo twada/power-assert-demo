@@ -1,6 +1,6 @@
 var espower = require('espower'),
     CoffeeScript = require('coffee-script-redux'),
-    _ = require('lodash'),
+    merge = require('lodash.merge'),
     fs = require('fs');
 
 module.exports = function(grunt) {
@@ -97,10 +97,7 @@ module.exports = function(grunt) {
 
     grunt.registerMultiTask('espower_csredux', 'instrument power assert into the coffee.', function() {
         // Merge task-specific and/or target-specific options with these defaults.
-        var options = this.options({
-                destructive: false,
-                powerAssertVariableName: 'assert'
-            });
+        var options = this.options(espower.defaultOptions());
 
         // Iterate over all specified file groups.
         this.files.forEach(function(f) {
@@ -119,7 +116,7 @@ module.exports = function(grunt) {
                     parseOptions = {raw: true},
                     compileOptions = {bare: true},
                     jsGenerateOptions = {compact: false},
-                    espowerOptions = _.merge(options, {
+                    espowerOptions = merge(options, {
                         path: absPath,
                         source: csCode
                     });
