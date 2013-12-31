@@ -18,10 +18,10 @@
     "test": "grunt espower_loader"
   },
   "devDependencies": {
-    "power-assert": "~0.3.0",
-    "espower-loader": "~0.3.0",
-    "grunt-espower": "~0.3.0",
-    "espower": "~0.3.0",
+    "power-assert": "~0.3.1",
+    "espower-loader": "~0.3.1",
+    "grunt-espower": "~0.3.1",
+    "espower": "~0.3.1",
     "esprima": "1.0.4",
     "coffee-script-redux": "2.0.0-beta7",
     "expect.js": "0.2.0",
@@ -29,7 +29,7 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-mocha-test": "~0.8.1",
     "grunt-contrib-watch": "~0.5.3",
-    "lodash": "~2.4.1"
+    "lodash.merge": "~2.4.1"
   },
   "licenses": [
     {
