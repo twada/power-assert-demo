@@ -53,7 +53,7 @@ module.exports = function(grunt) {
             espower_loader: {
                 options: {
                     ui: 'tdd',
-                    require: './enable-power-assert'
+                    require: 'intelli-espower-loader'
                 },
                 src: ['test/power_assert/*.js']
             },
@@ -138,5 +138,5 @@ module.exports = function(grunt) {
     grunt.registerTask('power_assert', ['clean:power_assert', 'espower:power_assert', 'mochaTest:power_assert']);
     grunt.registerTask('power_coffee', ['clean:power_coffee', 'espower_csredux:power_coffee', 'mochaTest:power_coffee']);
 
-    grunt.registerTask('default', ['power_assert']);
+    grunt.registerTask('default', ['espower_loader']);
 };

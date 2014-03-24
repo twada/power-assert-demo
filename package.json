@@ -17,9 +17,12 @@
   "scripts": {
     "test": "grunt espower_loader"
   },
+  "directories": {
+    "test": "test/"
+  },
   "devDependencies": {
-    "power-assert": "~0.3.1",
-    "espower-loader": "~0.3.2",
+    "power-assert": "~0.3.2",
+    "intelli-espower-loader": "~0.0.5",
     "grunt-espower": "~0.3.2",
     "espower": "~0.3.1",
     "esprima": "1.0.4",
