@@ -2,7 +2,7 @@
   "name": "power-assert-demo",
   "private": true,
   "description": "power-assert demo",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "keywords": [
     "test",
     "assert",
