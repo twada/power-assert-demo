@@ -21,10 +21,11 @@
     "test": "test/"
   },
   "devDependencies": {
-    "power-assert": "~0.3.2",
+    "power-assert": "~0.4.0",
+    "espower-loader": "~0.4.0",
     "intelli-espower-loader": "~0.0.5",
-    "grunt-espower": "~0.3.2",
-    "espower": "~0.3.1",
+    "grunt-espower": "~0.4.0",
+    "espower": "~0.4.0",
     "esprima": "1.0.4",
     "coffee-script-redux": "2.0.0-beta8",
     "expect.js": "0.3.1",
