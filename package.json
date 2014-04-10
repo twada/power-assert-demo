@@ -22,11 +22,8 @@
   },
   "devDependencies": {
     "power-assert": "~0.6.0",
-    "espower-loader": "~0.6.0",
     "intelli-espower-loader": "~0.0.7",
     "grunt-espower": "~0.6.0",
-    "espower": "~0.6.0",
-    "esprima": "1.1.1",
     "expect.js": "0.3.1",
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",

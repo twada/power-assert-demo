@@ -1,5 +1,4 @@
-var espower = require('espower'),
-    merge = require('lodash.merge'),
+var merge = require('lodash.merge'),
     fs = require('fs');
 
 module.exports = function(grunt) {
