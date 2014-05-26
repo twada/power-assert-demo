@@ -21,9 +21,9 @@
     "test": "test/"
   },
   "devDependencies": {
-    "power-assert": "~0.7.1",
+    "power-assert": "~0.7.2",
     "intelli-espower-loader": "~0.1.0",
-    "grunt-espower": "~0.7.0",
+    "grunt-espower": "~0.7.1",
     "expect.js": "0.3.1",
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
