@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             espower_loader: {
                 options: {
                     ui: 'tdd',
-                    require: 'intelli-espower-loader'
+                    require: './loader'
                 },
                 src: ['test/power_assert/*.js']
             },

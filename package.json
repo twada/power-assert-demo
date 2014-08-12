@@ -21,15 +21,16 @@
     "test": "test/"
   },
   "devDependencies": {
-    "power-assert": "~0.7.2",
-    "intelli-espower-loader": "~0.1.0",
-    "grunt-espower": "~0.7.1",
-    "expect.js": "0.3.1",
+    "chai": "~1.9.1",
+    "espower-loader": "^0.8.0",
+    "expect.js": "~0.3.1",
     "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-mocha-test": "~0.10.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "lodash.merge": "~2.4.1"
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-espower": "^0.8.0",
+    "grunt-mocha-test": "^0.11.0",
+    "lodash.merge": "~2.4.1",
+    "power-assert": "^0.8.0"
   },
   "licenses": [
     {
