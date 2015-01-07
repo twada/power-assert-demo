@@ -4,9 +4,10 @@
   "description": "power-assert demo",
   "version": "0.10.0",
   "keywords": [
-    "test",
-    "assert",
     "power-assert",
+    "assert",
+    "assertion",
+    "test",
     "testing"
   ],
   "author": {
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "~1.9.2",
+    "empower": "~0.10.0",
     "espower-loader": "^0.10.0",
     "expect.js": "~0.3.1",
     "grunt": "~0.4.2",
@@ -31,7 +33,10 @@
     "grunt-mocha-test": "^0.12.2",
     "intelli-espower-loader": "^0.5.0",
     "lodash.merge": "~2.4.1",
-    "power-assert": "^0.10.0"
+    "power-assert": "^0.10.0",
+    "power-assert-formatter": "~0.10.1",
+    "qunit-tap": "1.4.2",
+    "qunitjs": "1.14.0"
   },
   "licenses": [
     {

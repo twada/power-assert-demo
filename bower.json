@@ -1,0 +1,45 @@
+{
+  "name": "power-assert-demo",
+  "description": "power-assert demo",
+  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "espowered_tests",
+    "expr.js",
+    "loader.js",
+    "package.json",
+    "sandbox",
+    "scripts",
+    "test"
+  ],
+  "keywords": [
+    "power-assert",
+    "assert",
+    "assertion",
+    "test",
+    "testing"
+  ],
+  "authors": [
+    {
+      "name": "Takuto Wada",
+      "email": "takuto.wada@gmail.com",
+      "homepage": "https://github.com/twada"
+    }
+  ],
+  "homepage": "https://github.com/twada/power-assert-demo",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twada/power-assert-demo.git"
+  },
+  "devDependencies": {
+    "empower": "~0.10.0",
+    "expect": "~0.3.1",
+    "mocha": "~2.1.0",
+    "power-assert-formatter": "~0.10.1",
+    "qunit": "1.14.0",
+    "qunit-tap": "1.4.2",
+    "requirejs": "~2.1.15"
+  }
+}

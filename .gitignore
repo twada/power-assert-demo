@@ -1,6 +1,10 @@
 /node_modules
+/bower_components
 /.idea
 /js.jar
 /TODO.txt
 /espowered_tests
 /npm-debug.log
+/sandbox/plain_node_espowered.js
+/sandbox/qunit_node_espowered.js
+/sandbox/qunit_rhino_espowered.js
